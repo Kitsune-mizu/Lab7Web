@@ -112,6 +112,8 @@ berbeda-beda sesuai pilihan pekerjaan.
                 $gaji = 0;
         }
 
+
+
         echo "<h3>Hasil Data:</h3>";
         echo "Nama: $nama <br>";
         echo "Tanggal Lahir: " . date('d-m-Y', strtotime($tgl_lahir)) . "<br>";
