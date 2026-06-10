@@ -1,0 +1,801 @@
+/* import google font */
+@import
+url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import
+url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+/* Reset CSS */
+* {
+margin: 0;
+padding: 0;
+}
+body {
+line-height:1;
+font-size:100%;
+font-family:'Open Sans', sans-serif;
+color:#5a5a5a;
+}
+#container {
+width: 980px;
+margin: 0 auto;
+box-shadow: 0 0 1em #cccccc;
+}
+/* header */
+header {
+padding: 20px;
+}
+header h1 {
+margin: 20px 10px;
+color: #b5b5b5;
+}
+
+/* navigasi */
+nav {
+display: block;
+background-color: #1f5faa;
+}
+nav a {
+padding: 15px 30px;
+display: inline-block;
+color: #ffffff;
+font-size: 14px;
+text-decoration: none;
+font-weight: bold;
+}
+nav a.active,
+nav a:hover {
+background-color: #2b83ea;
+}
+
+/* Hero Panel */
+#hero {
+background-color: #e4e4e5;
+padding: 20px 30px;
+
+}
+#hero h1 {
+margin-bottom: 20px;
+font-size: 35px;
+}
+#hero p {
+margin-bottom: 20px;
+font-size: 18px;
+line-height: 25px;
+}
+
+/* main content */
+#wrapper {
+margin: 0;
+}
+#main {
+float: left;
+width: 640px;
+padding: 20px;
+}
+/* sidebar area */
+#sidebar {
+float: right;
+width: 260px;
+padding: 20px;
+}
+
+/* widget */
+.widget-box {
+border:1px solid #eee;
+margin-bottom:20px;
+}
+.widget-box .title {
+padding:10px 16px;
+background-color:#428bca;
+color:#fff;
+}
+.widget-box ul {
+list-style-type:none;
+}
+.widget-box li {
+border-bottom:1px solid #eee;
+}
+.widget-box li a {
+padding:10px 16px;
+color:#333;
+display:block;
+text-decoration:none;
+}
+.widget-box li:hover a {
+background-color:#eee;
+}
+.widget-box p {
+padding:15px;
+line-height:25px;
+}
+
+/* footer */
+footer {
+clear:both;
+background-color:#1d1d1d;
+padding:20px;
+color:#eee;
+}
+
+/* box */
+.box {
+display:block;
+float:left;
+width:33.333333%;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+padding:0 10px;
+text-align:center;
+}
+.box h3 {
+margin: 15px 0;
+}
+.box p {
+line-height: 20px;
+font-size: 14px;
+margin-bottom: 15px;
+}
+box img {
+border: 0;
+vertical-align: middle;
+}
+.image-circle {
+border-radius: 50%;
+}
+.row {
+margin: 0 -10px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+.row:after, .row:before,
+.entry:after, .entry:before {
+content:'';
+display:table;
+}
+.row:after,
+.entry:after {
+clear:both;
+}
+
+.divider {
+border:0;
+border-top:1px solid #eeeeee;
+margin:40px 0;
+}
+/* entry */
+.entry {
+margin: 15px 0;
+}
+.entry h2 {
+margin-bottom: 20px;
+}
+.entry p {
+line-height: 25px;
+}
+.entry img {
+float: left;
+border-radius: 5px;
+margin-right: 15px;
+}
+.entry .right-img {
+float: right;
+}
+
+/* about */
+
+#main h2, 
+#main h3, 
+#main h4 {
+  color: #1f5faa;
+  margin-bottom: 15px;
+}
+
+#main p {
+  line-height: 25px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+#main .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#main .box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#main .box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#main .box img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* contact */
+
+.contact-form {
+  background-color: #f8f9fa;
+  padding: 25px 30px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #1f5faa;
+  box-shadow: 0 0 5px rgba(31,95,170,0.3);
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #1f5faa;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #2b83ea;
+}
+
+/* artikel */
+.post {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  padding: 15px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.post:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+.post img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.post-content {
+  flex: 1;
+}
+
+.post-content h3 {
+  color: #1f5faa;
+  margin-bottom: 10px;
+}
+
+.post-content p {
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.post-content .btn {
+  background-color: #1f5faa;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.post-content .btn:hover {
+  background-color: #2b83ea;
+}
+
+/*CRUD*/
+/* ============================= */
+/* ADMIN TABLE */
+/* ============================= */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #5b8cc9;
+  color: #fff;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.table tr:hover {
+  background-color: #f5f9ff;
+}
+
+/* ============================= */
+/* KOLOM AKSI */
+/* ============================= */
+
+.table td:last-child {
+  white-space: nowrap;
+}
+
+/* Tombol umum */
+.table .btn {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-right: 5px;
+}
+
+/* Tombol Ubah */
+.table .btn {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.table .btn:hover {
+  background-color: #5a6268;
+}
+
+/* Tombol Hapus */
+.table .btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.table .btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Preview isi kecil */
+.table small {
+  color: #777;
+  display: block;
+  margin-top: 4px;
+}
+
+/* ============================= */
+/* ADMIN FORM */
+/* ============================= */
+
+form {
+  margin-top: 20px;
+}
+
+form p {
+  margin-bottom: 15px;
+}
+
+/* Input & Textarea */
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+
+/* Fokus */
+form input[type="text"]:focus,
+form textarea:focus {
+  border-color: #1f5faa;
+  box-shadow: 0 0 5px rgba(31,95,170,0.3);
+  outline: none;
+}
+
+/* Textarea khusus */
+form textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+/* Tombol Kirim */
+form input[type="submit"],
+form .btn-large {
+  background-color: #1f5faa;
+  color: #ffffff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+form input[type="submit"]:hover,
+form .btn-large:hover {
+  background-color: #2b83ea;
+}
+
+form input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+
+/* ============================= */
+/* LOGIN (SCOPED - TIDAK BENTROK) */
+/* ============================= */
+
+#login-wrapper {
+  width: 300px;
+  margin: 100px auto;
+  padding: 25px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Judul */
+#login-wrapper h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Label */
+#login-wrapper .form-label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Input */
+#login-wrapper .form-control {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+/* Tombol */
+#login-wrapper .btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 3px;
+  background: #999;
+  color: #fff;
+  cursor: pointer;
+}
+
+#login-wrapper .btn:hover {
+  background: #777;
+}
+
+/* Alert */
+#login-wrapper .alert {
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  border-radius: 3px;
+}
+
+#login-wrapper .alert-danger {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* ============================= */
+/* PAGINATION - FORCE OVERRIDE */
+/* ============================= */
+
+/* Hapus semua styling default */
+nav[aria-label="Page navigation"],
+.pagination {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 20px 0 !important;
+  width: auto !important;
+  display: block !important;
+}
+
+ul.pagination {
+  display: flex !important;
+  flex-wrap: wrap;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 20px 0 !important;
+  gap: 5px;
+  background: none !important;
+  border: none !important;
+}
+
+ul.pagination li {
+  display: inline-block !important;
+  background: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  width: auto !important;
+}
+
+ul.pagination li a,
+ul.pagination li span {
+  display: inline-block !important;
+  min-width: 35px !important;
+  width: auto !important;
+  height: 35px !important;
+  line-height: 33px !important;
+  text-align: center !important;
+  padding: 0 12px !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+  border: 1px solid #ddd !important;
+  background-color: #f5f5f5 !important;
+  color: #333 !important;
+  border-radius: 3px !important;
+  transition: all 0.3s ease !important;
+  font-size: 14px !important;
+  box-sizing: border-box !important;
+}
+
+/* Hover */
+ul.pagination li a:hover {
+  background-color: #e0e0e0 !important;
+  border-color: #ccc !important;
+  color: #333 !important;
+}
+
+/* Active/Current Page */
+ul.pagination li.active a,
+ul.pagination li.active span {
+  background-color: #5b8cc9 !important;
+  color: #fff !important;
+  border-color: #5b8cc9 !important;
+  cursor: default !important;
+  font-weight: bold !important;
+}
+
+/* Disabled */
+ul.pagination li.disabled a,
+ul.pagination li.disabled span {
+  color: #999 !important;
+  background-color: #f9f9f9 !important;
+  border-color: #ddd !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+}
+
+/* Remove any float */
+ul.pagination::after,
+ul.pagination::before {
+  display: none !important;
+}
+
+/* ============================= */
+/* FORM SEARCH (PENCARIAN) */
+/* ============================= */
+
+.form-search {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.form-search input[type="text"] {
+  width: 250px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-search input[type="text"]:focus {
+  border-color: #5b8cc9;
+  outline: none;
+  box-shadow: 0 0 3px rgba(91, 140, 201, 0.3);
+}
+
+.form-search input[type="submit"],
+.form-search .btn-primary {
+  background-color: #5b8cc9;
+  color: #fff;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.form-search input[type="submit"]:hover,
+.form-search .btn-primary:hover {
+  background-color: #4a75a8;
+}
+
+.form-search input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+/* ============================= */
+/* FORM SEARCH (PENCARIAN & FILTER) */
+/* ============================= */
+
+.form-search {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column; /* Menyusun elemen ke bawah */
+  gap: 12px; /* Jarak antara kolom pencarian dan kategori */
+  background-color: #f5f9ff; /* Warna latar belakang lembut agar terlihat sebagai satu kesatuan */
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid #dce4f0;
+  max-width: 450px; /* Batas lebar form agar tidak terlalu memanjang */
+}
+
+/* Membungkus input search dan tombol cari agar bersebelahan */
+.form-search .search-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.form-search input[type="text"] {
+  flex: 1; /* Membuat input teks mengisi ruang tersisa */
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.form-search input[type="text"]:focus {
+  border-color: #5b8cc9;
+  outline: none;
+  box-shadow: 0 0 5px rgba(91, 140, 201, 0.3);
+}
+
+.form-search input[type="submit"],
+.form-search .btn-primary {
+  background-color: #5b8cc9;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.form-search input[type="submit"]:hover,
+.form-search .btn-primary:hover {
+  background-color: #4a75a8;
+}
+
+.form-search input[type="submit"]:active {
+  transform: scale(0.97);
+}
+
+/* Styling Dropdown Kategori di bawah kolom search */
+.form-search select.kategori-filter {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  appearance: auto;
+  cursor: pointer;
+}
+
+.form-search select.kategori-filter:focus {
+  border-color: #5b8cc9;
+  outline: none;
+  box-shadow: 0 0 5px rgba(91, 140, 201, 0.3);
+}
+
+/* ============================= */
+/* STYLING DROPDOWN KATEGORI     */
+/* ============================= */
+
+/* Menyesuaikan select box agar sama persis dengan input text dan textarea */
+form select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #5a5a5a;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  cursor: pointer;
+  
+  /* Menjaga panah bawaan browser tetap rapi */
+  appearance: auto; 
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+}
+
+/* Efek menyala (Glow/Focus) saat dropdown sedang diklik */
+form select:focus {
+  border-color: #1f5faa;
+  box-shadow: 0 0 5px rgba(31,95,170,0.3);
+  outline: none;
+}
+
+/* Memberi jarak sedikit pada pilihan dropdown saat dibuka (bergantung browser) */
+form select option {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+}
