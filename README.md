@@ -2,48 +2,48 @@
 # Praktikum 1: PHP Framework (Codeigniter)
 ## Mengaktifkan ekstentsi di xampp
 
-![alt text](image.png)
+![alt text](image/image.png)
 
 ## Hapus bagian (;) untuk mengaktifkan 
 
-![alt text](image-1.png)
+![alt text](image/image-1.png)
 
 ## Instalasi Codeigniter 4 dan unduh di (https://codeigniter.com/download)
 ## Buka browser dengan alamat http://localhost/lab11_ci/ci4/public/ sesuaikan dengan file nya.
 
-![alt text](image-2.png)
+![alt text](image/image-2.png)
 
 ## Lalu jalankan CLI di xampp dan arahkan direktorinya (xampp/htdocs/lab11_ci/ci4/)
 
-![alt text](image-3.png)
+![alt text](image/image-3.png)
 
 ## Lalu jalankan perintah untuk memanggil CLI Codeigniter (php spark)
 
-![alt text](image-4.png)
+![alt text](image/image-4.png)
 
 ## Lalu aktifkan debugging di file env dan ubah ke (.env) dan pada bagian evironment ubah jadi development, agar menampilkan bagian yang error.
 
-![alt text](image-5.png)
+![alt text](image/image-5.png)
 
 ## Menambahkan route baru di (app/config/Routes.php) 
 
-![alt text](image-6.png)
+![alt text](image/image-6.png)
 
 ## Lalu cek route apakah sudah benar dengan jalankan perintah di Cli (php spark routes)
 
-![alt text](image-7.png)
+![alt text](image/image-7.png)
 
 ## Lalu buat file page.php di file controllers
 
-![alt text](image-8.png)
+![alt text](image/image-8.png)
 
 ## Lalu gunakan (php spark serve) di Cli agar bisa akses (http://localhost:8080)
 
-![alt text](image-9.png)
+![alt text](image/image-9.png)
 
 ## Lalu buka http://localhost:8080/about
 
-![alt text](image-10.png)
+![alt text](image/image-10.png)
 
 ## Lalu tambahkan di controllers page
 ```php
@@ -84,7 +84,7 @@ halaman ini.'
 }
 ```
 
-![alt text](image-11.png)
+![alt text](image/image-11.png)
 
 ## Lalu buat file template di file Views dan tambahkan file footer dan header dan style.css di ambil di pratikum sebelumnya letakan di file Publik
 ```html
@@ -155,7 +155,7 @@ footer
 </html>
 ```
 
-![alt text](image-12.png)
+![alt text](image/image-12.png)
 
 # Pertanyaan dan Tugas
 ## Lengkapi kode program untuk menu lainnya yang ada pada Controller Page, sehingga semua link pada navigasi header dapat menampilkan tampilan dengan layout yang sama.
@@ -222,11 +222,11 @@ class Page extends BaseController
 ```
 ## Tampilan sederhana kontak, faq dan Tos, sama seperti tampilan about
 
-![alt text](image-13.png)
+![alt text](image/image-13.png)
 
-![alt text](image-14.png)
+![alt text](image/image-14.png)
 
-![alt text](image-15.png)
+![alt text](image/image-15.png)
 
 # Praktikum 2: Framework Lanjutan (CRUD)
 ## Membuat Database: Studi Kasus Data Artikel
@@ -355,7 +355,7 @@ INSERT INTO artikel (judul, isi, slug) VALUES
 );
 ```
 
-![alt text](image-16.png)
+![alt text](image/image-16.png)
 
 ### Membuat Tampilan Detail Artikel dan Tambahkan fungsi baru pada Controller Artikel dengan nama view().
 ```php
@@ -400,7 +400,7 @@ public function view($slug)
 
 ### Membuat Routing untuk artikel detail dan Buka Kembali file app/config/Routes.php, kemudian tambahkan routing untuk artikel detail. ($routes->get('/artikel/(:any)', 'Artikel::view/$1'))
 
-![alt text](image-17.png)
+![alt text](image/image-17.png)
 
 ### Membuat Menu Admin. Buat method baru pada Controller Artikel dengan nama admin_index(). 
 ```php
@@ -496,7 +496,7 @@ $routes->group('admin', function ($routes) {
 
 ### Dan sesuaikan tampilan css untuk tabel CRUD
 
-![alt text](image-18.png)
+![alt text](image/image-18.png)
 
 ### Menambah Data Artikel Tambahkan fungsi/method baru pada Controller Artikel dengan nama add(). 
 ```php
@@ -572,7 +572,7 @@ public function add()
 <?= $this->include('template/admin_footer'); ?>
 ```
 
-![alt text](image-19.png)
+![alt text](image/image-19.png)
 
 ### Mengubah Data dan Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit().
 ```php
@@ -656,9 +656,9 @@ public function delete($id)
     } 
 ```
 
-![alt text](image-20.png)
+![alt text](image/image-20.png)
 
-![alt text](image-21.png)
+![alt text](image/image-21.png)
 
 ### Tambahan untuk admin_dashboard.php
 ```php
@@ -687,7 +687,7 @@ Views dashboard admin_dashboard.php
 <?= $this->include('template/admin_footer'); ?>
 ```
 
-![alt text](image-22.png)
+![alt text](image/image-22.png)
 
 # Praktikum 3: View Layout dan View Cell
 ### Membuat Layout Utama Buat folder layout di dalam app/Views/, Buat file main.php di dalam folder layout 
@@ -916,7 +916,7 @@ class Home extends BaseController
 }
 ```
 
-![alt text](image-23.png)
+![alt text](image/image-23.png)
 
 # Praktikum 4: Framework Lanjutan (Modul Login)
 ### Membuat Tabel: User Login 
@@ -1072,7 +1072,7 @@ class User extends BaseController
 
 ### Membuat Database Seeder (php spark make:seeder UserSeeder )
 
-![alt text](<Screenshot (59).png>)
+![alt text](image/<Screenshot (59).png>)
 
 #### buka file UserSeeder.php yang berada di lokasi direktori/app/Database/Seeds/UserSeeder.php kemudian isi dengan
 ```php
@@ -1098,11 +1098,11 @@ class UserSeeder extends Seeder
 
 ### Selanjutnya buka kembali CLI dan ketik perintah berikut: (php spark db:seed UserSeeder)
 
-![alt text](<Screenshot (60).png>)
+![alt text](image/<Screenshot (60).png>)
 
 ### Uji Coba Login. Selanjutnya buka url http://localhost:8080/user/login seperti berikut: 
 
-![alt text](<Screenshot (61).png>)
+![alt text](image/<Screenshot (61).png>)
 
 ### Menambahkan Auth Filter untuk halaman admin. Buat file baru dengan nama Auth.php pada direktori app/Filters.
 ```php
@@ -1230,7 +1230,7 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 
 ### Percobaan Akses Menu Admin, Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebut diakses  maka, akan dimuculkan halaman login. 
 
-![alt text](<Screenshot (62).png>)
+![alt text](image/<Screenshot (62).png>)
 
 ### Fungsi Logout, Tambahkan method logout pada Controller User seperti berikut: 
 ```php
@@ -1305,7 +1305,7 @@ public function admin_index()
 <?= $pager->links(); ?>
 ```
 
-![alt text](image-24.png)
+![alt text](image/image-24.png)
 
 ### Membuat Pencarian 
 #### Untuk membuat pencarian data, buka kembali Controller Artikel, pada method admin_index ubah kodenya seperti berikut 
@@ -1337,7 +1337,7 @@ public function admin_index()
 <?= $pager->only(['q'])->links(); ?>
 ```
 
-![alt text](image-25.png)
+![alt text](image/image-25.png)
 
 # Praktikum 6: Relasi Tabel dan Query Builder
 ##  membuat tabel baru bernama `kategori` untuk mengkategorikan artikel.
@@ -1717,7 +1717,7 @@ class Artikel extends BaseController
 
 <?= $this->include('template/admin_footer'); ?>
 ```
-![alt text](image-26.png)
+![alt text](image/image-26.png)
 
 ## Pertanyaan dan Tugas 
 1. Selesaikan semua langkah praktikum di atas. 
@@ -1948,9 +1948,9 @@ class KategoriSeeder extends Seeder
 
 #### Lalu jalankan php spark db:seed KategoriSeeder
 
-![alt text](image-27.png)
+![alt text](image/image-27.png)
 
-![alt text](image-28.png)
+![alt text](image/image-28.png)
 
 # Praktikum 6: Upload File Gambar
 ## Buka kembali Controller Artikel pada project sebelumnya, sesuaikan kode pada method add seperti berikut:
@@ -1993,9 +1993,9 @@ dan
 <form action="" method="post" enctype="multipart/form-data"> 
 ```
 
-![alt text](image-29.png)
+![alt text](image/image-29.png)
 
-![alt text](image-30.png)
+![alt text](image/image-30.png)
 
 # Praktikum 8: AJAX
 ## Menambahkan Pustaka jQuery.
@@ -2718,7 +2718,7 @@ $(document).ready(function () {
 <?= $this->include('template/admin_footer'); ?>
 ```
 
-![alt text](image-31.png)
+![alt text](image/image-31.png)
 
 # Praktikum 10: API
 ## Mengunduh aplikasi REST Client, Postman. Postman – (https://www.postman.com/downloads/)
@@ -2828,28 +2828,28 @@ $routes->resource('post');
 * Pilih method GET dan masukkan URL berikut:
 * http://localhost:8080/post Lalu, klik Send. Jika hasil test menampilkan semua data artikel dari database, maka pengujian berhasil.
 
-![alt text](image-31.png)
+![alt text](image/image-31.png)
 
 ### Menampilkan Data Spesifik
 * Masih menggunakan method GET, hanya perlu menambahkan ID artikel di belakang URL seperti ini:
 * http://localhost:8080/post/3 Selanjutnya, klik Send. Request tersebut akan menampilkan data artikel yang memiliki ID nomor 3 di database.
 
-![alt text](image-32.png)
+![alt text](image/image-32.png)
 
 ### Mengubah Data
 * Untuk mengubah data, silakan ganti method menjadi PUT. Kemudian, masukkan URL artikel yang ingin diubah. Misalnya, ingin mengubah data artikel dengan ID nomor 3, maka masukkan URL berikut:
 * http://localhost:8080/post/2, Selanjutnya, pilih tab Body. Kemudian, pilih x-www-form-uriencoded. Masukkan nama atribut tabel pada kolom KEY dan nilai data yang baru pada kolom VALUE. Kalau sudah, klik Send.
 
-![alt text](image-33.png)
+![alt text](image/image-33.png)
 
 ### Menambahkan Data
 * Anda perlu menggunakan method POST untuk menambahkan data baru ke database. Kemudian, masukkan URL berikut:
 * http://localhost:8080/post Pilih tab Body, lalu pilih x-www-form-uriencoded. Masukkan atribut tabel pada kolom KEY dan nilai data baru di kolom VALUE. Jangan lupa, klik Send.
 
-![alt text](image-34.png)
+![alt text](image/image-34.png)
 
 ### Menghapus Data
 * Pilih method DELETE untuk menghapus data. Lalu, masukkan URL spesifik data mana yang ingin di hapus. Misalnya, ingin menghapus data nomor 3, maka URL-nya seperti ini:
 * http://localhost:8080/post/3 Langsung saja klik Send, maka akan mendapatkan pesan bahwa data telah berhasil dihapus dari database.
 
-![alt text](image-35.png)
+![alt text](image/image-35.png)
