@@ -1,4 +1,4 @@
-# PRATIKUM 1-10
+# PRATIKUM 1-10 Folder LAB11_CI
 # Praktikum 1: PHP Framework (Codeigniter)
 ## Mengaktifkan ekstentsi di xampp
 
