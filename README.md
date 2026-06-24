@@ -1,4 +1,175 @@
 # PRATIKUM 1-10 Folder LAB11_CI
+## Struktur utama folder
+
+```
+lab11_ci/
+├── .git/
+├── ci4/
+│   ├── .env
+│   ├── app/
+│   │   ├── .htaccess
+│   │   ├── Cells/
+│   │   ├── Common.php
+│   │   ├── Config/
+│   │   │   ├── App.php
+│   │   │   ├── Autoload.php
+│   │   │   ├── Boot/
+│   │   │   ├── Cache.php
+│   │   │   ├── Constants.php
+│   │   │   ├── ContentSecurityPolicy.php
+│   │   │   ├── Cookie.php
+│   │   │   ├── Cors.php
+│   │   │   ├── CURLRequest.php
+│   │   │   ├── Database.php
+│   │   │   ├── DocTypes.php
+│   │   │   ├── Email.php
+│   │   │   ├── Encryption.php
+│   │   │   ├── Events.php
+│   │   │   ├── Exceptions.php
+│   │   │   ├── Feature.php
+│   │   │   ├── Filters.php
+│   │   │   ├── ForeignCharacters.php
+│   │   │   ├── Format.php
+│   │   │   ├── Generators.php
+│   │   │   ├── Honeypot.php
+│   │   │   ├── Hostnames.php
+│   │   │   ├── Images.php
+│   │   │   ├── Kint.php
+│   │   │   ├── Logger.php
+│   │   │   ├── Migrations.php
+│   │   │   ├── Mimes.php
+│   │   │   ├── Modules.php
+│   │   │   ├── Optimize.php
+│   │   │   ├── Pager.php
+│   │   │   ├── Paths.php
+│   │   │   ├── Publisher.php
+│   │   │   ├── Routes.php
+│   │   │   ├── Routing.php
+│   │   │   ├── Security.php
+│   │   │   ├── Services.php
+│   │   │   ├── Session.php
+│   │   │   ├── Toolbar.php
+│   │   │   ├── UserAgents.php
+│   │   │   ├── Validation.php
+│   │   │   ├── View.php
+│   │   │   └── WorkerMode.php
+│   │   ├── Controllers/
+│   │   │   ├── AjaxController.php
+│   │   │   ├── Api/
+│   │   │   ├── Artikel.php
+│   │   │   ├── BaseController.php
+│   │   │   ├── Home.php
+│   │   │   ├── page.php
+│   │   │   ├── Post.php
+│   │   │   └── User.php
+│   │   ├── Database/
+│   │   ├── Filters/
+│   │   ├── Helpers/
+│   │   ├── index.html
+│   │   ├── Language/
+│   │   ├── Libraries/
+│   │   ├── Models/
+│   │   │   ├── .gitkeep
+│   │   │   ├── ArtikelModel.php
+│   │   │   ├── KategoriModel.php
+│   │   │   └── UserModel.php
+│   │   ├── ThirdParty/
+│   │   └── Views/
+│   │       ├── about.php
+│   │       ├── ajax/
+│   │       ├── artikel/
+│   │       ├── components/
+│   │       ├── contact.php
+│   │       ├── errors/
+│   │       ├── faqs.php
+│   │       ├── home.php
+│   │       ├── layout/
+│   │       ├── template/
+│   │       ├── tos.php
+│   │       ├── user/
+│   │       └── welcome_message.php
+│   ├── composer.json
+│   ├── LICENSE
+│   ├── phpunit.xml.dist
+│   ├── preload.php
+│   ├── public/
+│   │   ├── .htaccess
+│   │   ├── assets/
+│   │   ├── favicon.ico
+│   │   ├── gambar/
+│   │   ├── index.php
+│   │   ├── robots.txt
+│   │   └── style.css
+│   ├── README.md
+│   ├── spark
+│   ├── system/
+│   │   ├── .htaccess
+│   │   ├── API/
+│   │   ├── Autoloader/
+│   │   ├── BaseModel.php
+│   │   ├── Boot.php
+│   │   ├── bootstrap.php
+│   │   ├── Cache/
+│   │   ├── CLI/
+│   │   ├── CodeIgniter.php
+│   │   ├── Commands/
+│   │   ├── Common.php
+│   │   ├── ComposerScripts.php
+│   │   ├── Config/
+│   │   ├── Controller.php
+│   │   ├── Cookie/
+│   │   ├── Database/
+│   │   ├── DataCaster/
+│   │   ├── DataConverter/
+│   │   ├── Debug/
+│   │   ├── Email/
+│   │   ├── Encryption/
+│   │   ├── Entity/
+│   │   ├── Events/
+│   │   ├── Exceptions/
+│   │   ├── Files/
+│   │   ├── Filters/
+│   │   ├── Format/
+│   │   ├── Helpers/
+│   │   ├── Honeypot/
+│   │   ├── HotReloader/
+│   │   ├── HTTP/
+│   │   ├── I18n/
+│   │   ├── Images/
+│   │   ├── index.html
+│   │   ├── Language/
+│   │   ├── Log/
+│   │   ├── Model.php
+│   │   ├── Modules/
+│   │   ├── Pager/
+│   │   ├── Publisher/
+│   │   ├── RESTful/
+│   │   ├── rewrite.php
+│   │   ├── Router/
+│   │   ├── Security/
+│   │   ├── Session/
+│   │   ├── Superglobals.php
+│   │   ├── Test/
+│   │   ├── ThirdParty/
+│   │   ├── Throttle/
+│   │   ├── Traits/
+│   │   ├── Typography/
+│   │   ├── util_bootstrap.php
+│   │   ├── Validation/
+│   │   └── View/
+│   ├── tests/
+│   └── writable/
+│       ├── .htaccess
+│       ├── cache/
+│       ├── debugbar/
+│       ├── index.html
+│       ├── logs/
+│       ├── session/
+│       └── uploads/
+├── image/
+└── README.md
+```
+---
 # Praktikum 1: PHP Framework (Codeigniter)
 ## Mengaktifkan ekstentsi di xampp
 
