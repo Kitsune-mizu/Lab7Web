@@ -1,4 +1,4 @@
-# PRATIKUM 1-4
+# PRATIKUM 1-10
 # Praktikum 1: PHP Framework (Codeigniter)
 ## Mengaktifkan ekstentsi di xampp
 
@@ -2828,30 +2828,28 @@ $routes->resource('post');
 * Pilih method GET dan masukkan URL berikut:
 * http://localhost:8080/post Lalu, klik Send. Jika hasil test menampilkan semua data artikel dari database, maka pengujian berhasil.
 
-![alt text](image-32.png)
+![alt text](image-31.png)
 
 ### Menampilkan Data Spesifik
 * Masih menggunakan method GET, hanya perlu menambahkan ID artikel di belakang URL seperti ini:
-* http://localhost:8080/post/2 Selanjutnya, klik Send. Request tersebut akan menampilkan data artikel yang memiliki ID nomor 2 di database.
+* http://localhost:8080/post/3 Selanjutnya, klik Send. Request tersebut akan menampilkan data artikel yang memiliki ID nomor 3 di database.
 
-![alt text](image1.png)
+![alt text](image-32.png)
 
 ### Mengubah Data
-* Untuk mengubah data, silakan ganti method menjadi PUT. Kemudian, masukkan URL artikel yang ingin diubah. Misalnya, ingin mengubah data artikel dengan ID nomor 2, maka masukkan URL berikut:
+* Untuk mengubah data, silakan ganti method menjadi PUT. Kemudian, masukkan URL artikel yang ingin diubah. Misalnya, ingin mengubah data artikel dengan ID nomor 3, maka masukkan URL berikut:
 * http://localhost:8080/post/2, Selanjutnya, pilih tab Body. Kemudian, pilih x-www-form-uriencoded. Masukkan nama atribut tabel pada kolom KEY dan nilai data yang baru pada kolom VALUE. Kalau sudah, klik Send.
 
-![alt text](image2.png)
+![alt text](image-33.png)
 
 ### Menambahkan Data
 * Anda perlu menggunakan method POST untuk menambahkan data baru ke database. Kemudian, masukkan URL berikut:
 * http://localhost:8080/post Pilih tab Body, lalu pilih x-www-form-uriencoded. Masukkan atribut tabel pada kolom KEY dan nilai data baru di kolom VALUE. Jangan lupa, klik Send.
 
-![alt text](image3.png)
+![alt text](image-34.png)
 
 ### Menghapus Data
-* Pilih method DELETE untuk menghapus data. Lalu, masukkan URL spesifik data mana yang ingin di hapus. Misalnya, ingin menghapus data nomor 4, maka URL-nya seperti ini:
-* http://localhost:8080/post/4 Langsung saja klik Send, maka akan mendapatkan pesan bahwa data telah berhasil dihapus dari database.
+* Pilih method DELETE untuk menghapus data. Lalu, masukkan URL spesifik data mana yang ingin di hapus. Misalnya, ingin menghapus data nomor 3, maka URL-nya seperti ini:
+* http://localhost:8080/post/3 Langsung saja klik Send, maka akan mendapatkan pesan bahwa data telah berhasil dihapus dari database.
 
-![alt text](image4.png)
-
-![alt text](image-33.png)
+![alt text](image-35.png)
