@@ -1,5 +1,5 @@
 # PRATIKUM 1-10 Folder LAB11_CI
-## Struktur utama folder
+## Struktur utama folder codeigniter4
 
 ```
 lab11_ci/
